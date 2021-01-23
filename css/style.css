@@ -1,0 +1,16 @@
+
+
+
+
+/*-------------sp----------------*/
+@media screen and (max-width: 650px) {
+	body {
+		max-width: 640px;
+	}
+
+	.pc { display: none !important; }
+	.sp { display: block !important; }
+
+
+
+	}
