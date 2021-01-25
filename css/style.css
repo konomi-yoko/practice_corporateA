@@ -1,11 +1,33 @@
+header {
+	width: 100%;
+	height: 120px;
+	background: #000;
+	position: fixed;
+	top: 0;
+}
 
+nav {
+	padding: 0 40px;
+	position: relative;
+}
 
+nav ul{
+	width: 658px;
+	height: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
+nav ul .contact{
+	padding: 16px 25px;
+	background: #222;
+}
 
 /*-------------sp----------------*/
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 758px) {
 	body {
-		max-width: 640px;
+		max-width: 750px;
 	}
 
 	.pc { display: none !important; }
