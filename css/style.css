@@ -1,19 +1,43 @@
+body {
+	font-family: 'Noto Sans CJK JP', sans-serif;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+a img:hover {
+	opacity: 0.9 ;
+}
+
+button:hover {
+	opacity: 0.8 ;
+}
+
 header {
 	width: 100%;
-	height: 120px;
-	background: #000;
+	height: 80px;
+	color: #fff;
 	position: fixed;
 	top: 0;
 }
 
 nav {
-	padding: 0 40px;
+	width: 100%;
+	max-width: 1600px;
+	height: 80px;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 40px;
+	margin: 0 auto;
 }
 
 nav ul{
 	width: 658px;
-	height: 45px;
+	height: 46px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -22,6 +46,21 @@ nav ul{
 nav ul .contact{
 	padding: 16px 25px;
 	background: #222;
+}
+
+.company-name {
+	margin-bottom: 23px;
+}
+
+/*-------------mainvisual-------------*/
+.mainvisual {
+	width: 100%;
+	height: auto;
+}
+
+.mainvisual img {
+	width: 100%;
+	height: auto;
 }
 
 /*-------------sp----------------*/
