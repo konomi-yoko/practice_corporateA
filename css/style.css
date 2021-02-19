@@ -2,6 +2,7 @@ body {
 	font-family: 'Noto Sans CJK JP', sans-serif;
 	font-size: 14px;
 	line-height: 14px;
+	letter-spacing: 0.8px;
 }
 
 .pc { display: block !important; }
@@ -62,6 +63,69 @@ nav ul .contact{
 	width: 100%;
 	height: auto;
 }
+
+
+/*------------------topics------------------*/
+.topics-container {
+	max-width: 1600px;
+	height: 1034px;
+	background: url(../img/topics_b_pc.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+.topics-wrapper {
+	width: 92.5%;
+	height: 540px;
+	background: #fff;
+	position: absolute;
+	top: -40px;
+	right: 0;
+	padding: 40px 0 0 100px;
+}
+
+.topics-wrapper h1 {
+	margin-bottom: 40px;
+}
+
+.topics-list-wrapper {
+	width: 1160px;
+	height: 335px;
+	display: flex;
+}
+
+.topics-list-inner {
+	width: 275px;
+	height: auto;
+	margin-right: 20px;
+}
+
+.topics-list-inner:last-child {
+	margin-right: 0;
+}
+
+.topics-list-inner .list-text {
+	padding-top: 34px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.topics-list-inner .time {
+	width: 107px;
+	height: 28px;
+	background: #222;
+	color: #fff;
+	font-size: 12px;
+	line-height: 12px;
+	padding-top: 10px;
+	padding-left: 20px;
+	position: absolute;
+	top: -13px;
+	left: 20px;
+}
+
 
 /*-------------sp----------------*/
 @media screen and (max-width: 758px) {
