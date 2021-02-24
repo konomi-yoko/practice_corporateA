@@ -47,29 +47,14 @@ $(document).ready(function(){
 });
 
 // nav固定
-$(function() {
-    let headNav = $('.js-header-nav');
-    //scrollしたとき
-    $(window).on('scroll', function () {
-    //現在の位置が200px以上かつ、クラスfixedが付与されていない（false）時
-    if($(this).scrollTop() > 200 && headNav.hasClass('fixed') == false) {
-    //headerの高さ分上に設定(上から降りてくるようにするため)
-    headNav.css({top: '-100px'});
-    //クラスfixedを付与
-    headNav.addClass('fixed');
-    //位置を0に設定。１秒かけてアニメーションでにゅるっと降りてくる
-    headNav.animate({top: 0},1000);
-  }
-    //現在の位置が200px以下かつ、クラスfixedが付与されている時にfixedを外す
-　　　//(スクロールアップでも消えるように)
-    else if($(this).scrollTop() < 200 && headNav.hasClass('fixed') == true){
-    headNav.removeClass('fixed');
-  }
-　　　//必要に応じてつける
-　　　else if($(this).scrollTop() <= 200) { 
-　　　headNav.removeClass("fixed");
-　　　}
-  });
+jQuery(window).on('scroll', function () {
+    if (jQuery('.js-header-nav').height() < jQuery(this).scrollTop()) {
+        jQuery('.js-header-nav').addClass('change-color');
+        $('.company-name').children('img').attr('src', 'img/company_logoB_pc.png');
+    } else {
+        jQuery('.js-header-nav').removeClass('change-color');
+        $('.company-name').children('img').attr('src', 'img/company_logoW_pc.png');
+    }
 });
 
 
