@@ -22,6 +22,7 @@ button:hover {
 	opacity: 0.7 ;
 }
 
+/*--------------header--------------*/
 header {
 	width: 100%;
 	height: 80px;
@@ -73,6 +74,10 @@ nav ul .contact{
 	margin-bottom: 23px;
 }
 
+.company-name-sp {
+	display: none;
+}
+
 .language {
 	padding-top: 12px;
 	color: #fff;
@@ -87,6 +92,89 @@ nav ul .contact{
 
 .header-nav.change-color .language {
 	display: none;
+}
+
+/*--------------hamburger------------*/
+.hamburger {
+  display: none;
+  width: 40px;
+  margin-right: 15px;
+  position: absolute;
+  top: 24px;
+  right: 0px;
+}
+
+.hamburger span:after,
+.hamburger span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+
+.hamburger span:after{
+  top: 9px;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+}
+
+.hamburger span,
+.hamburger span:after,
+.hamburger span:before {
+  width: 100%;
+  height: 1px;
+  background-color: #222;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+
+.hamburger.on span {
+  background-color: transparent;
+}
+
+.hamburger.on span:before {
+  transform: rotate(32deg) translate(4px, 8px);
+}
+
+.hamburger.on span:after {
+  transform: rotate(-32deg) translate(4px, -8px);
+}
+
+/*---------------drower---------------*/
+
+.drower {
+  height: 203px;
+  width: 100vw;
+  background-color: rgba(8, 8, 8, .9);
+	display: block;
+	position: fixed;
+	top: 50px;
+	z-index: 9;
+	display: none;
+}
+
+.drower li {
+	width: 100%;
+	height: 51px;
+	padding: 0 25px;
+	display: block;
+	padding: 0 25px;
+}
+
+.border-btm {
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #555;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.drower li:last-child .border-btm{
+	border: none;
 }
 
 /*-------------mainvisual-------------*/
@@ -183,12 +271,6 @@ nav ul .contact{
 	position: relative;
 	text-align: center;
 	margin-right: 30px;
-}
-
-.solid-bar {
-	width: 60px;
-	height: 1px;
-	position: absolute;
 }
 
 .slide-bar {
@@ -478,10 +560,167 @@ footer {
 @media screen and (max-width: 758px) {
 	body {
 		max-width: 750px;
+	font-size: 11px;
+	line-height: 11px;
+	letter-spacing: 0.8px;
 	}
 
 	.pc { display: none !important; }
 	.sp { display: block !important; }
+
+
+
+
+/*--------------hamburger--------------*/
+	.hamburger {
+	  display: block;
+	}
+
+/*--------------header--------------*/
+	header {
+		height: 50px;
+	}
+
+nav {
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+nav ul{
+	display: none;
+}
+
+.header-nav.change-color ul {
+	margin-bottom: 0;
+}
+
+.company-name {
+	display: none;
+}
+
+.company-name-sp {
+	font-size: 15px;
+	letter-spacing: 0.8px;
+	display: block;
+}
+
+.language {
+	display: none;
+}
+
+/*------------------topics------------------*/
+.top-container {
+	height: 207.75vw;
+	background: url(../img/topics_b_sp.png) no-repeat;
+}
+
+.topics-wrapper {
+	width: 96%
+	height: 167.2vw;
+	margin-left: 4%;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: -37px;
+}
+
+.topics-inner {
+	width: auto;
+	padding: 29px 6.666666vw 0 2.66666vw;
+	margin: 0 auto;
+}
+
+.topics-wrapper h1 {
+	margin-bottom: 30px;
+	width: auto;
+	height: 3.2vw;
+}
+
+h1 img {
+	width: auto;
+	height: 100%;
+}
+
+.topics-list-wrapper {
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.topics-list-inner {
+	max-width: 312px;
+	height: auto;
+	margin-right: 20px;
+}
+
+.topics-list-inner img {
+	width: 100%;
+	height: auto;
+}
+
+.topics-list-inner .list-text {
+	line-height: 20px;
+	padding-top: 15px;
+	padding-left: 10px;
+	position: relative;
+}
+
+.topics-list-inner .time {
+	width: 70px;
+	height: 21px;
+	background: #222;
+	color: #fff;
+	text-align: center;
+	font-size: 9px;
+	line-height: 21px;
+	padding-top: 0;
+	padding-left: 0;
+	position: absolute;
+	top: -10px;
+	left: 20px;
+}
+
+.more-btn button {
+	width: 200px;
+	height: 45px;
+	border: 1px solid #222;
+	position: relative;
+	text-align: center;
+	margin-right: 2vw;
+}
+
+.slide-bar {
+	width: 50px;
+	bottom: 12px;
+	right: -26px;
+	transition: none;
+}
+
+.more-btn button:hover .slide-bar {
+	transform: none;
+}
+
+/*---------------about---------------*/
+.about-inner {
+	width: 100%;
+	padding: 170.5333333vw 6.6666vw 0;
+	margin: 0 7.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
