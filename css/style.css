@@ -432,7 +432,7 @@ ul.studios-list-wrapper {
 
 .studios-list-wrapper .list-text > p {
 	height: 82px;
-	line-height: 24px
+	line-height: 24px;
 }
 
 /*-----------------news----------------*/
@@ -632,10 +632,13 @@ nav ul{
 	margin: 0 auto;
 }
 
+h1 {
+	height: 3.2vw;
+}
+
 .topics-wrapper h1 {
 	margin-bottom: 30px;
 	width: auto;
-	height: 3.2vw;
 }
 
 h1 img {
@@ -706,18 +709,147 @@ h1 img {
 /*---------------about---------------*/
 .about-inner {
 	width: 100%;
-	padding: 170.5333333vw 6.6666vw 0;
+	padding: 170.5333333vw 6.6666vw 0 0;
 	margin: 0 7.5%;
 }
 
+.about-inner h1 {
+	margin-bottom: 8vw;
+}
 
 
+.about-happines {
+	width: 72.4vw;
+	height: auto;
+	margin-bottom: 13.333333vw;
+}
 
+.about-happines img {
+	width: 100%;
+	height: auto;
+}
 
+.about-text {
+	margin-bottom: 7.86666vw;
+}
 
+.about-text p {
+	width: 100%;
+	line-height: 20px;
+}
 
+/*--------------service------------*/
+.service-wrapper {
+	padding: 12vw 0 0;
+}
 
+.service-innner {
+	width: 100%;
+}
 
+.service-img-wrapper {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 0;
+}
+
+.service-img-wrapper li {
+	width: 100%;
+	margin-left: 0;
+	margin-bottom: 5.33333vw;
+}
+
+li.service-tit-wrapper {
+	width: 100%;
+	margin-left: 4vw;
+	margin-bottom: 8vw;
+}
+
+li.service-img1 {
+	margin-right: 8.4vw;
+}
+
+li.service-img2 {
+	margin-left: 8.4vw;
+}
+
+li.service-img3 {
+	margin-right: 8.4vw;
+}
+
+.service-btn-wrapper {
+	width: 100%;
+	display: block;
+	padding-top: 
+}
+
+.service-btn-wrapper li {
+	width: 100%;
+	height: auto;
+	padding: 0 4vw 5.3333vw;
+}
+
+/*--------------btm-wrapper-------------*/
+.btm-container {
+	width: 100%;
+	min-width: 100%;
+	height: auto;
+	background: #fff;
+	position: static;
+}
+
+.btm-wrapper {
+	width: 100%;
+	height: auto;
+	padding: 8vw 0 0;
+	position: static;
+	top: none;
+	left: none;
+	right: none;
+}
+
+/*------------------studios---------------*/
+.studios-wrapper {
+	width: 100%;
+	margin: 0 auto 0;
+	padding-left: 0;
+}
+
+.studios-wrapper h1 {
+	margin-bottom: 8vw;
+	margin-left: 4vw
+}
+
+ul.studios-list-wrapper {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.studios-list-wrapper li {
+	width: 100%;
+	margin-bottom: 10.66666vw;
+}
+
+.studios-list-wrapper .list-img {
+	margin-bottom: 5.3333vw;
+}
+
+.studios-list-wrapper .list-text h2 {
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 4.8vw;
+}
+
+.studios-list-wrapper .list-text {
+	padding: 0 4vw;
+}
+
+.studios-list-wrapper .list-text > p {
+	height: 21.8666666vw;
+	line-height: 24px;
+}
 
 
 
