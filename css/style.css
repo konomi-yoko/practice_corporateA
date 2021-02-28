@@ -22,6 +22,24 @@ button:hover {
 	opacity: 0.7 ;
 }
 
+
+/*---------------animation---------------*/
+.animation {
+	opacity : 0;
+	visibility: hidden;
+	transition: 0.5s;
+	transform: translateY(20px);
+	-moz-transition-delay:200ms;
+	-webkit-transition-delay:200ms;
+	-o-transition-delay:200ms;
+	-ms-transition-delay:200ms;
+}
+.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
 /*--------------header--------------*/
 header {
 	width: 100%;
@@ -145,22 +163,28 @@ nav ul .contact{
 
 /*---------------drower---------------*/
 .drower {
-  height: 203px;
+  height: 571px;
   width: 100vw;
-  background-color: rgba(8, 8, 8, .9);
+  padding-top: 55px;
+  background-color: #fff;
 	display: block;
 	position: fixed;
-	top: 50px;
 	z-index: 9;
 	display: none;
 }
 
 .drower li {
 	width: 100%;
-	height: 51px;
-	padding: 0 25px;
+	height: 61px;
+	text-align: center;
 	display: block;
-	padding: 0 25px;
+}
+
+.drower li p {
+	height: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-top: 25px;
+	,margin: 0 25px;
 }
 
 .border-btm {
@@ -174,6 +198,33 @@ nav ul .contact{
 
 .drower li:last-child .border-btm{
 	border: none;
+}
+
+.language-sp {
+	height: 66px;
+}
+
+.language-sp p {
+	border-bottom: none;
+}
+
+.language-sp a {
+	opacity: 0.6;
+}
+
+.space {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.contact-sp {
+	height: 40px;
+	background: #222;
+	color: #fff;
+}
+
+.contact-sp p {
+	padding-top: 15px;
 }
 
 /*-------------mainvisual-------------*/
@@ -594,6 +645,10 @@ nav ul{
 	display: none;
 }
 
+.header-nav.change-color {
+	height: 50px;
+}
+
 .header-nav.change-color ul {
 	margin-bottom: 0;
 }
@@ -608,6 +663,10 @@ nav ul{
 	display: block;
 }
 
+.company-name-sp-js.change-text {
+	color: #222;
+}
+
 .language {
 	display: none;
 }
@@ -619,7 +678,7 @@ nav ul{
 }
 
 .topics-wrapper {
-	width: 96%
+	width: 96%;
 	height: 167.2vw;
 	margin-left: 4%;
 	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
@@ -629,7 +688,7 @@ nav ul{
 
 .topics-inner {
 	width: auto;
-	padding: 29px 6.666666vw 0 2.66666vw;
+	padding: 7.733333vw 6.666666vw 0 2.66666vw;
 	margin: 0 auto;
 }
 
@@ -650,16 +709,21 @@ h1 img {
 .topics-list-wrapper {
 	width: 100%;
 	height: auto;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .topics-list-inner {
-	width: 100%;
-	max-width: 312px;
+	width: 48%;
 	height: auto;
-	margin-right: 20px;
+	margin-right: 4%;
+	margin-bottom: 7vw;
 }
+
+.topics-list-inner:nth-child(even) {
+	margin-right: 0;
+}
+
 
 .topics-list-inner img {
 	width: 100%;
@@ -668,6 +732,7 @@ h1 img {
 
 .topics-list-inner .list-text {
 	line-height: 20px;
+	letter-spacing: 0;
 	padding-top: 15px;
 	padding-left: 10px;
 	position: relative;
@@ -776,7 +841,7 @@ h1 img {
 
 li.service-tit-wrapper {
 	width: 100%;
-	margin-left: 4vw;
+	padding-left: 4vw;
 	margin-bottom: 8vw;
 }
 
@@ -832,7 +897,7 @@ li.service-img3 {
 
 .studios-wrapper h1 {
 	margin-bottom: 8vw;
-	margin-left: 4vw
+	margin-left: 4vw;
 }
 
 ul.studios-list-wrapper {
@@ -870,6 +935,10 @@ ul.studios-list-wrapper {
 	line-height: 24px;
 }
 
+.studios-list-wrapper .more-btn button {
+	margin-right: 6.66666vw;
+}
+
 /*-----------------news----------------*/
 .news-wrapper {
 	width: 96%;
@@ -877,11 +946,12 @@ ul.studios-list-wrapper {
 	padding-left: 4vw;
 	margin-right: 4%;
 	margin-bottom: 0;
+	padding-top: 6.66666vw;
 	padding-bottom: 21.3333vw;
 }
 
 .news-wrapper h1 {
-	margin-bottom: 8vw;
+	margin-bottom: 6.66666vw;
 }
 
 ul.news-list-wrapper {
@@ -913,19 +983,19 @@ ul.news-list-wrapper {
 
 .news-wrapper .more-btn button {
 	margin-right: 6.66666vw;
-
 }
 
 
 /*--------------topscroll-btn-------------*/
 .topBtn {
-  right: 4vw;
-  bottom: 120px;
+  right: 15px;
+  bottom: 40px;
   height:40px;
 }
 
 .topBtn-wrapper {
-	max-width: 1600px;
+	width: 100%;
+	max-width: 100vw;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -950,6 +1020,7 @@ ul.news-list-wrapper {
 
 /*----------------footer----------------*/
 footer {
+	width: 100vw;
 	height: 132px;
 	padding-top: 20px;
 	font-size: 10px;
@@ -957,7 +1028,7 @@ footer {
 }
 
 .footer-wrapper {
-	width: 100%;
+	width: 100vw;
 	margin: 0 auto;
 }
 

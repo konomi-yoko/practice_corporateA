@@ -19,11 +19,11 @@
 			<p class="company-name">
 				<img class="scroll-01" src="img/company_logoW_pc.png" alt="public function Inc.">
 			</p>
-			<p class="company-name-sp">public function Inc.</p>
+			<p class="company-name-sp company-name-sp-js">public function Inc.</p>
 			<ul>
 				<li><a href="#">企業情報</a></li>
-				<li><a href="#">サービス</a></li>
-				<li><a href="#">ニュース</a></li>
+				<li><a href="#service">サービス</a></li>
+				<li><a href="#news">ニュース</a></li>
 				<li><a href="#">IR</a></li>
 				<li><a href="#">サイトマップ</a></li>
 				<li><a href="#">採用情報</a></li>
@@ -40,17 +40,18 @@
 
 	<!-- ドロワー -->
 	<ul class="drower">
-		<li><a href="#">企業情報</a></li>
-		<li><a href="#">サービス</a></li>
-		<li><a href="#">ニュース</a></li>
-		<li><a href="#">IR</a></li>
-		<li><a href="#">サイトマップ</a></li>
-		<li><a href="#">採用情報</a></li>
-		<li class="contact"><a href="#">お問い合わせ</a></li>
+		<li><p><a href="#">企業情報</a></p></li>
+		<li><p><a href="#service">サービス</a></p></li>
+		<li><p><a href="#news">ニュース</a></p></li>
+		<li><p><a href="#">IR</a></p></li>
+		<li><p><a href="#">サイトマップ</a></p></li>
+		<li><p><a href="#">採用情報</a></p></li>
+		<li class="language-sp"><p>JP<span class="space">/</span><a href="#">EN</a></p></li>
+		<li class="contact-sp"><p><a href="#">お問い合わせ</a></p></li>
 	</ul>
 
 	<!-- mainvisual -->
-	<div class="mainvisual">
+	<div class="mainvisual animation">
 		<img class="pc" src="img/mainvisual_pc.png" alt="小さな思いやりが、明日の輝く景色を創る。">
 		<img class="sp" src="img/mainvisual_sp.png" alt="小さな思いやりが、明日の輝く景色を創る。">
 	</div>
@@ -58,7 +59,7 @@
 	<div class="top-container">
 		<!-- topics -->
 		<div class="topics-wrapper">
-			<div class="topics-inner">
+			<div class="topics-inner animation">
 				<h1>
 					<img class="pc" src="img/topics_tit_pc.png" alt="TOPICS">
 					<img class="sp" src="img/topics_tit_sp.png" alt="TOPICS">
@@ -116,7 +117,7 @@
 
 		<!-- about -->
 		<div class="about-wrapper">
-			<div class="about-inner">
+			<div class="about-inner animation">
 				<h1>
 					<img class="pc" src="img/about_tit_pc.png" alt="ABOUT US">
 					<img class="sp" src="img/about_tit_sp.png" alt="ABOUT US">
@@ -135,15 +136,15 @@
 						<p>read more</p>
 						<span class="slide-bar"></span>
 					</button></a>
-				</div>
+				</div><span id="service"></span>
 			</div>
 		</div>
 	</div>
 
 	<!-- service -->
 	<div class="service-wrapper">
-		<div class="service-innner">
-			<ul class="service-img-wrapper">
+		<div class="service-innner animation">
+			<ul class="service-img-wrapper ">
 				<li class="service-tit-wrapper">
 					<h1>
 						<img class="pc" src="img/service_tit_pc.png" alt="SERVICE">
@@ -195,7 +196,7 @@
 		<div class="btm-wrapper">
 
 			<!-- studios -->
-			<div class="studios-wrapper">
+			<div class="studios-wrapper animation">
 				<h1>
 					<img class="pc" src="img/studios_tit_pc.png" alt="STUDIOS">
 					<img class="sp" src="img/studios_tit_sp.png" alt="STUDIOS">
@@ -246,14 +247,14 @@
 									<p>read more</p>
 									<span class="slide-bar"></span>
 								</button></a>
-							</div>
+							</div><span id="news"></span>
 						</div>
 					</li>
 				</ul>
 			</div>
 
 			<!-- news -->
-			<div class="news-wrapper">
+			<div class="news-wrapper animation">
 				<h1>
 					<img class="pc" src="img/news_tit_pc.png" alt="NEWS">
 					<img class="sp" src="img/news_tit_sp.png" alt="NEWS">
