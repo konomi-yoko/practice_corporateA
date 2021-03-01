@@ -587,6 +587,10 @@ footer {
 }
 
 .company-name-w {
+	display: block;
+}
+
+.company-name-sp {
 	display: none;
 }
 
@@ -647,6 +651,7 @@ nav ul{
 
 .header-nav.change-color {
 	height: 50px;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
 
 .header-nav.change-color ul {
@@ -741,8 +746,6 @@ h1 img {
 .topics-list-inner .time {
 	width: 70px;
 	height: 21px;
-	background: #222;
-	color: #fff;
 	text-align: center;
 	font-size: 9px;
 	line-height: 21px;
@@ -750,7 +753,7 @@ h1 img {
 	padding-left: 0;
 	position: absolute;
 	top: -10px;
-	left: 20px;
+	left: 10px;
 }
 
 .more-btn button {
@@ -1032,9 +1035,15 @@ footer {
 	margin: 0 auto;
 }
 
+
 .company-name-w {
 	display: none;
 }
+
+.company-name-sp {
+	display: block;
+}
+
 
 footer .company-name-sp {
 	text-align: center;
